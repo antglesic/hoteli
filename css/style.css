@@ -1,0 +1,250 @@
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+body{margin:0px; padding:0px; font-family: 'Open Sans', sans-serif;}
+section{width:100%; max-width:1200px; margin:0px auto; display:table; position:relative;}
+h1{margin:0px auto; display:table; font-size:26px; padding:40px 0px; color:#002e5b; text-align:center;}
+h1 span{font-weight:500;}
+
+header{width:100%; display:table; background-color:#fde428; margin-bottom:50px;}
+#odjava{float:left; font-size: 18px; padding-top: 20px; padding-left: 10px; color:#002e5b;}
+nav{width:auto; float:right;}
+nav ul{display:table; float:right;}
+nav ul li{float:left;}
+nav ul li:last-child{padding-right:0px;}
+nav ul li a{color:#002e5b; font-size:18px; padding: 25px 20px; display:inline-block; transition: all 0.5s ease 0s;}
+nav ul li a:hover{background-color:#002e5b; color:#fde428; transition: all 0.5s ease 0s;}
+nav ul li a:hover i{color:#fde428; transition: all 0.5s ease 0s;}
+nav ul li a i{padding-right:10px; color:#002e5b; transition: all 0.5s ease 0s;}
+
+.toggle-menu ul{display:table; width:25px;}
+.toggle-menu ul li{width:100%; height:3px; background-color:#002e5b; margin-bottom:4px;}
+.toggle-menu ul li:last-child{margin-bottom:0px;}
+#toggle-1{display:none}
+#toggle {display:none}
+.content{display:table; margin-bottom:60px; width:900px;}
+.content h2{font-size:18px; font-weight:500; color:#002e5b; border-bottom:1px solid #fde428; display:table; padding-bottom:10px; margin-bottom:10px;}
+.content p{font-size:14px; line-height:22px; color:#7c7c7c; text-align:justify;}
+
+footer{display:table; padding-bottom:30px; width:100%;}
+.social{margin:0px auto; display:table; display:table;}
+.social li{float:left; padding:0px 10px;}
+.social li a{color:#002e5b; transition: all 0.5s ease 0s;}
+.social li a:hover{color:#fde428; transition: all 0.5s ease 0s;}
+
+@media only screen and (max-width: 1440px) {
+    section{max-width:95%;}
+}
+
+@media only screen and (max-width: 980px) {
+    header{padding:20px 0px;}
+    #logo{padding:0px;}
+    input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; background:none;}
+    input[type=checkbox]:fous{background:none;}
+    label {float:right; padding:8px 0px; display:inline-block; cursor:pointer; }
+    input[type=checkbox]:checked ~ nav {display:block;}
+    #toggle-1{
+        display: inline-block;
+    }
+    #toggle {
+        display: inline-block;
+    }
+    nav{display:none; position:absolute; right:0px; top:53px; background-color:#002e5b; padding:0px; z-index:99;}
+    nav ul{width:auto;}
+    nav ul li{float:none; padding:0px; width:100%; display:table;}
+    nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
+    nav ul li a i{color:#fde428; padding-right:13px;}
+    #slika {display:none;}
+}
+
+@media only screen and (max-width: 980px) {
+    .content{width:90%;}
+}
+
+@media only screen and (max-width: 568px) {
+    h1{padding:25px 0px;}
+    h1 span{display:block;}
+    #slika {display:none;}
+}
+
+@media only screen and (max-width: 480px) {
+    section {max-width: 90%;}
+    #slika {display:none;}
+}
+
+@media only screen and (max-width: 360px) {
+    h1{font-size:20px;}
+    label{padding:5px 0px;}
+    #logo{font-size: 20px;}
+    nav{top:47px;}
+    #slika {display:none;}
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {padding: 20px 0px;}
+    #slika {display:none;}
+}
+
+/* PRIJAVA */
+.form-login{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+.form-log-in-with-email{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 130px;
+    text-align: center;
+}
+
+.form-log-in-with-email .form-white-background{
+    width: 570px;
+    box-sizing: border-box;
+    background-color: #fffce6;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    padding: 60px 80px;
+    margin-bottom: 32px;
+}
+
+.form-log-in-with-email .form-row{
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+.form-log-in-with-email .form-title-row{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.form-log-in-with-email h1{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #002e5b;
+    font-size: 24px;
+    padding: 0 30px 15px;
+    border-bottom: 2px solid #002e5b;
+    margin:0;
+}
+
+.form-log-in-with-email .form-row > label span{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #5f5f5f;
+    width: 125px;
+    text-align: right;
+    padding-right: 25px;
+}
+
+.form-log-in-with-email input{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-log-in-with-email .button{
+    display: block;
+    border-radius: 2px;
+    background-color:  #fde428;
+    color: #002e5b;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 15px 35px;
+    border: 0;
+    margin: 55px auto 0;
+    cursor: pointer;
+}
+
+.form-log-in-with-email .button:hover {
+    background-color: #e3c902;
+}
+
+.form-log-in-with-email .form-forgotten-password,
+.form-log-in-with-email .form-create-an-account{
+    text-decoration: none;
+    padding: 4px 8px;
+    font-weight: normal;
+}
+
+.form-log-in-with-email .form-forgotten-password{
+    color:  #4e9eda;
+}
+
+.form-log-in-with-email .form-create-an-account{
+    color:  #7b9d62;
+    background-color: #d6f0c3;
+}
+
+@media (max-width: 900px) {
+
+    .form-login{
+        margin: 20px auto;
+    }
+
+    .form-log-in-with-email{
+        position: relative;
+        display: block;
+        margin: 0 0 50px;
+    }
+
+    .form-log-in-with-email .form-white-background{
+        margin: 0 auto 32px;
+    }
+
+    .form-log-in-with-email:after{
+        bottom: -80px;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .form-log-in-with-email .form-white-background{
+        width: 300px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .form-log-in-with-email .form-row > label span{
+        display: block;
+        text-align: left;
+        padding: 0 0 10px;
+    }
+
+    .form-log-in-with-email .form-email,
+    .form-log-in-with-email .form-password{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form-log-in-with-email .form-forgotten-password,
+    .form-log-in-with-email .form-create-an-account{
+        display: block;
+        margin: 5px auto;
+        max-width: 180px;
+    }
+
+}
+
+#slideshow { 
+    margin-left: 50%;
+    margin-top: 20%;
+    position: relative; 
+    padding: 10px; 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
